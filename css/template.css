@@ -1,0 +1,108 @@
+/* main */
+.button {
+	padding: 2px 5px;
+    border: 1px solid #777777;
+	border-radius: 3px 3px 3px 3px;
+	background-color: #EEEEEE;
+	box-shadow: 1px 1px 1px #CCCCCC;
+	cursor: pointer;
+}
+.button:focus {
+	box-shadow: 1px 1px 1px #CCCCCC inset;
+}
+input {
+    border: 1px solid #777777;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 1px #CCCCCC inset;
+    padding: 3px 5px;
+}
+form {
+	margin-bottom: 20px;
+}
+
+
+/* header */
+header {
+    margin-bottom: 40px;
+}
+.tab {
+	position: fixed;
+	right: -140px;
+    padding: 10px 10px 10px 25px;
+	width: 120px;
+	border: 2px solid #999999;
+	border-radius: 5px 0 0 5px;
+    background: url("../img/arrow_left.gif") no-repeat scroll 3px center #DDDDDD;
+	box-shadow: 3px 3px 5px #333333;
+	cursor: pointer;
+}
+.tab-parcing {
+	margin-top: 20px;
+	background: url("../img/arrow_left_black.gif") no-repeat scroll 3px center #DDDDDD;
+}
+.tab-blacklist {
+	margin-top: 220px;
+	background: url("../img/arrow_left_red.png") no-repeat scroll 3px center #DDDDDD;
+}
+.tab a:hover {
+	text-decoration: underline;
+}
+
+
+/* middle */
+section {
+    padding: 10px 20px;
+}
+table.objects td {
+	padding-right: 10px;
+}
+table.objects thead tr td {
+	padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid #666666;
+    font-size: 14px;
+    font-weight: bold;
+}
+tbody tr td {
+	padding-bottom: 5px;
+    padding-top: 5px;
+}
+tbody tr.one td {
+    background-color: #eeeeee;
+}
+tbody tr.two td {
+    background-color: #ffffff;
+}
+a.add_to_blacklist {
+	color: #CC0000;
+    text-decoration: underline;
+}
+
+
+/* blacklist */
+.blacklist > li {
+    padding: 5px 0;
+}
+.blacklist li > * {
+    display: inline-block;
+}
+.blacklist li p {
+    margin-right: 20px;
+}
+.remove_from_blacklist {
+    color: #007000;
+}
+.remove_from_blacklist:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+

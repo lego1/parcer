@@ -1,0 +1,27 @@
+Options All -ExecCGI -Indexes -Includes +FollowSymlinks
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTP_HOST} ^parcer.my
+	RewriteRule (.*) http://www.parcer.my/$1 [R=301,L]
+	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+	RewriteRule ^index\.html$ http://www.parcer.my/ [R=301,L]
+</IfModule>
+
+
+### TO DO: разобраться с ЧПУ и подключением css и js
+#RewriteRule ^categoy/?$ index.php?route=categoy [QSA,L]
+#RewriteRule ^categoy/([a-zA-Z]+)/?$ index.php?route=categoy&action=$1 [QSA,L]
+#RewriteRule ^categoy/([a-zA-Z]+)/([-a-zA-Z0-9_]+)/? index.php?route=categoy&action=$2&value=$3 [QSA,L]
+#RewriteRule ^main/?$ index.php?route=main [QSA,L]
+#RewriteRule ^main/([a-zA-Z]+)/?$ index.php?route=main&action=$2 [QSA,L]
+#RewriteRule ^main/([a-zA-Z]+)/([-a-zA-Z0-9_]+)/? index.php?route=main&action=$2&value=$3 [QSA,L]
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#RewriteRule .* index.php [QSA,L]

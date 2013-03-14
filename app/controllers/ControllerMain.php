@@ -1,0 +1,1 @@
+<?phpclass ControllerMain extends Controller {    function index(){		$category = $this->loadModel('category');		$this->data['objects'] = $category->getObjects();		$this->view->generatePage('Main.php', 'DefaultPage.php', $this->data);	}}

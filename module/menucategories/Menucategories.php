@@ -1,0 +1,1 @@
+<nav class="menucategories"><?phpif (isset($categories) && count($categories) > 0)	echo $categories;?></nav>
